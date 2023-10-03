@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
 
-export const Searchbar = ({ handleSubmitSearchBar }) => (
+export const Searchbar = ({ handleSearchSubmit }) => (
   <header>
-    <form onSubmit={handleSubmitSearchBar}>
+    <form onSubmit={handleSearchSubmit}>
       
 
       <input
@@ -19,5 +19,5 @@ export const Searchbar = ({ handleSubmitSearchBar }) => (
 );
 
 Searchbar.propTypes = {
-  handleSubmitSearchBar: PropTypes.func.isRequired,
+  handleSearchSubmit: PropTypes.func.isRequired,
 }
